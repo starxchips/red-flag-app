@@ -1196,3 +1196,21 @@ html {
   syntax: "*";
   inherits: false
 }
+
+@keyframes fadeSlow {
+  0% { opacity: 0; filter: blur(4px); transform: translateY(10px); }
+  100% { opacity: 1; filter: blur(0px); transform: translateY(0); }
+}
+
+.animate-fadeSlow {
+  animation: fadeSlow 1.5s ease-out;
+}
+
+@keyframes dissolve {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.dissolve {
+  animation: dissolve 0.35s ease-out;
+}

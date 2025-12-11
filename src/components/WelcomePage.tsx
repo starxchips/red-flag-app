@@ -8,6 +8,7 @@ interface WelcomePageProps {
 export function WelcomePage({ onStart }: WelcomePageProps) {
   return (
     <div className="min-h-screen bg-[#5C1A1A] relative overflow-hidden">
+
       <LaceOverlay />
       
       <div className="relative z-20 min-h-screen flex flex-col items-center justify-center px-6 py-12">
