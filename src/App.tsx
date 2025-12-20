@@ -14,7 +14,7 @@ export default function App() {
   const [step, setStep] = useState<'welcome' | 'select' | 'results'>('welcome');
   const [result, setResult] = useState<ResultData | null>(null);
 
-  // ⭐ Fade animation
+  // fade animation
   const [fade, setFade] = useState(false);
 
   useEffect(() => {
@@ -23,10 +23,9 @@ export default function App() {
     return () => clearTimeout(timeout);
   }, [step]);
 
-  const fadeClass =
-    fade
-      ? "opacity-0 transition-opacity duration-500"
-      : "opacity-100 transition-opacity duration-500";
+  const fadeClass = fade
+    ? 'opacity-0 transition-opacity duration-500'
+    : 'opacity-100 transition-opacity duration-500';
 
   // ------------------------
   // PAGE HANDLERS
@@ -40,11 +39,6 @@ export default function App() {
 
   const handleComplete = (data: ResultData) => {
     setResult(data);
-    setStep('results'); // ⬅ DIRECTLY GO TO RESULTS
-    window.scrollTo(0, 0);
-  };  
-
-  const handleRevealDone = () => {
     setStep('results');
     window.scrollTo(0, 0);
   };
@@ -61,9 +55,7 @@ export default function App() {
 
   return (
     <div className={fadeClass}>
-      {step === 'welcome' && (
-        <WelcomePage onStart={handleStart} />
-      )}
+      {step === 'welcome' && <WelcomePage onStart={handleStart} />}
 
       {step === 'select' && (
         <SelectionPage onComplete={handleComplete} />

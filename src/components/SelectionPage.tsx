@@ -59,16 +59,16 @@ export function SelectionPage({ onComplete }: SelectionPageProps) {
         <PaperCard decoration="clip" className="w-full max-w-2xl mx-auto mb-8">
           <div className="px-6 py-8 text-center">
             <h2 className="text-[#2A0A0A] mb-2" style={{ fontFamily: 'Libre Baskerville, serif' }}>
-              Select the Signs
+              Which behaviors felt familiar?
             </h2>
 
             <p className="text-[#4A3A2A]" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-              Mark the patterns you've witnessed
+            Select anything you experienced, noticed, or questioned.
             </p>
 
             {selected.length > 0 && (
               <p className="text-[#5C1A1A] mt-3" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-                {selected.length} selected
+                {selected.length} marked
               </p>
             )}
           </div>
@@ -140,7 +140,7 @@ export function SelectionPage({ onComplete }: SelectionPageProps) {
               className="w-full px-8 py-6 text-[#2A0A0A] hover:bg-[#DED0B8] transition-all duration-300"
               style={{ fontFamily: 'Libre Baskerville, serif' }}
             >
-              View Your Archive
+              View Your Reflection
             </button>
           </PaperCard>
         )}

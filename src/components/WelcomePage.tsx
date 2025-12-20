@@ -18,12 +18,10 @@ export function WelcomePage({ onStart }: WelcomePageProps) {
             <h1 className="text-[#2A0A0A] mb-3" style={{ fontFamily: 'Libre Baskerville, serif' }}>
               The Red Flag
             </h1>
-            <h2 className="text-[#2A0A0A] mb-2" style={{ fontFamily: 'Libre Baskerville, serif' }}>
-              Archive
-            </h2>
             <div className="w-24 h-[2px] bg-[#5C1A1A] mx-auto my-6 opacity-40"></div>
             <p className="text-[#4A3A2A] leading-relaxed" style={{ fontFamily: 'Cormorant Garamond, serif' }}>
-              A curated collection of warnings, patterns, and lessons learned. Document the signs you should have seen.
+            A private space to reflect on patterns you noticed, questioned, or ignored.
+            This is not about blame — it is about clarity.
             </p>
           </div>
         </PaperCard>
@@ -47,7 +45,7 @@ export function WelcomePage({ onStart }: WelcomePageProps) {
             className="w-full px-8 py-6 text-[#2A0A0A] transition-all duration-300 hover:bg-[#DED0B8] active:shadow-inner"
             style={{ fontFamily: 'Libre Baskerville, serif' }}
           >
-            Begin Documentation
+            Start Your Reflection
           </button>
         </PaperCard>
 
